@@ -9,5 +9,5 @@ import { RouterOutlet } from '@angular/router';
   imports: [RouterOutlet], // Import RouterOutlet to use it in the template
 })
 export class AppComponent {
-  title = 'DYN Application'; // Application title
+  title = 'DYN Application Version 3'; // Application title
 }
