@@ -3,7 +3,7 @@ module.exports = function(config) {
       // other configurations...
   
       browsers: ['ChromeHeadless'], // Use Chrome in headless mode
-  
+      singleRun: true,
       customLaunchers: {
         ChromeHeadlessCI: {
           base: 'ChromeHeadless',
@@ -12,7 +12,7 @@ module.exports = function(config) {
       },
   
       // Use the custom launcher in CI environments
-      browsers: process.env.CI ? ['ChromeHeadlessCI'] : ['Chrome'],
+      browsers:  ['ChromeHeadlessCI']
     });
   };
   
