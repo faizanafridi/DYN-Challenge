@@ -29,5 +29,12 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "include": [
+    "src/**/*.ts",   // This ensures all TypeScript files are included, including polyfills.ts
+    "src/**/**/*.ts"
+  ],
+  "files": [
+    "src/app/polyfills.ts"   // Ensure polyfills.ts is listed here as well
+  ]
 }

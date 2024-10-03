@@ -1,1 +1,130 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    color: #4CAF50;
+    text-align: center;
+  }
+  
+  a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+  /* Error Messages */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Container Styles */
+  .login-container,
+  .register-container,
+  .profile-container {
+    max-width: 400px;
+    background-color: white;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Switch between Register and Login */
+  .switch-auth {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .login-container,
+    .register-container,
+    .profile-container {
+      width: 90%;
+      margin-top: 30px;
+    }
+  }
+  
+  /* Success/Info Styles */
+  .info {
+    background-color: #e7f5e7;
+    color: #2e7d32;
+    padding: 10px;
+    border: 1px solid #2e7d32;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  /* Basic Layout for app component */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  

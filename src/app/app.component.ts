@@ -3,11 +3,11 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
+  standalone: true, // Marking this component as standalone
+  imports: [RouterOutlet], // Import RouterOutlet to use it in the template
 })
 export class AppComponent {
-  title = 'dyn';
+  title = 'DYN Application'; // Application title
 }
